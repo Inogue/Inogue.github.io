@@ -4,13 +4,13 @@ Esta pagina es de testeo.
 
 ## Lista de tareas
 
-[ ] Crear plantilla del cuerpo de HTML
+- [ ] Crear plantilla del cuerpo de HTML
 
-[ ] Añadir navegacion
+- [ ] Añadir navegacion
 
-[ ] Crear estilo basico
+- [ ] Crear estilo basico
 
-[ ] Añadir pie de pagina
+- [ ] Añadir pie de pagina
 
-[ ] Usar CSS para estilos de la pagina
+- [ ] Usar CSS para estilos de la pagina
 
