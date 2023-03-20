@@ -5,8 +5,12 @@ Esta pagina es de testeo.
 ## Lista de tareas
 
 [ ] Crear plantilla del cuerpo de HTML
+
 [ ] Aladir navegacion
+
 [ ] Crear estilo basico
+
 [ ] Añadir pie de pagina
+
 [ ] Usar CSS para estilos de la pagina
 
