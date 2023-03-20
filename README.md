@@ -6,7 +6,7 @@ Esta pagina es de testeo.
 
 [ ] Crear plantilla del cuerpo de HTML
 
-[ ] Aladir navegacion
+[ ] Añadir navegacion
 
 [ ] Crear estilo basico
 
