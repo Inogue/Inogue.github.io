@@ -14,3 +14,7 @@ Esta pagina es de testeo.
 
 - [ ] Usar CSS para estilos de la pagina
 
+
+Los dos nuevos tipos de formularios son el checkbox, y el radio.
+
+Son dos formularios que tienen como objetivo marcar 

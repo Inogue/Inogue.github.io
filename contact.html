@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Inogue proyectos</title> 
+<link rel="icon" type"image/x-icon" href="favicon.icon">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<h1>Inogue Proyectos <abbr title="Escola de Noves Tecnologies Intera        ctives">ENTI</abbr></h1>
+		<p>Estudiante de ciberseguridad</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Portada</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="game.html">Juego</a></li>
+			<li><a href="projects.html">Proyectos</a></li>
+			<li><a href="contact.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<main id="contact-main">
+	<h2>Informacion de contacto</h2>
+	<form>
+ 		<p><label for="nombre">Nombre:</label> <input type="text" name="contact_name" id="nombre" required /></p>
+ 		<p><label for="apellido">Apellido:</label> <input type="text" name="contact_surname" id="apellido" required /></p>
+ 		<p><label for="correo">Correo Electronico:</label> <input type="email" name="contact_mail" id="correo" required /></p>
+ 		<p><label for="nacimiento">Fecha de nacimiento:</label> <input type="date" name="birthdate" id="nacimiento" max="2005-01-01" required /></p>
+ 		<p><label for="ojos">Color de ojos:</label> <input type="color" name="eyes" id="ojos" required /></p>
+		<p><label for="lenguajes">Lenguajes de Programacion</label>
+		<input type="checkbox" name="lenguaje" id="lenguajes" value="html">HTML
+		<p><input type="checkbox" name="lenguaje" id="lenguajes" value="javascript">Javascript</p>
+			<p><input type="checkbox" name="lenguaje" id="lenguajes" value="css">CSS</p>
+			<p><input type="checkbox" name="lenguaje" id="lenguajes" value="xml">XML</p>
+			<p><input type="radio" id="identificador" value="valor" name="nombre"/></p>
+		<p><label for="zodiaco" required >Signo zodiacal:</label></p>
+
+			<select name="contact-zodiaco" id="zodiaco">
+			<option value="...">...</option>
+			<option value="aries">Aries</option>
+			<option value="tauro">Tauro</option>
+			<option value="acuario">Acurio</option>
+			<option value="geminis">Geminis</option>
+			<option value="piscis">Piscis</option>
+			<option value="cancer">Cancer</option>
+			<option value="libra">Libra</option>
+			<option value="leo">Leo</option>
+			<option value="virgo">Virgo</option>
+			<option value="sagitario">Sagitario</option>
+			<option value="escorpio">Escorpio</option>
+
+		<p><input type="submit" value="enviar" /></p>
+	</main>
+	<footer>
+		<p>Inogue (c) 2023</p>
+	</footer>
+</body>
+
+</html>
