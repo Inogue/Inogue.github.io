@@ -1,0 +1,8 @@
+<?xml encoding="UTF-8"?>
+<character>
+	<name>Eustaquio</name>
+	<age>80</age>
+	<class>Pollo</class>
+	<CAMPO>ValorS</CAMPO>
+	<CampoINT>33</CampoINT>
+</characters>

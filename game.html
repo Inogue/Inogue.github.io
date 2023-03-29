@@ -7,21 +7,25 @@
 	<link rel="stylesheet" href="style.css" />
 	<script>
 
-let contador=0;
+let contador=10;
 function cuenta()
 {
 contador--;
 
 if(contador==-1){
 document.getElementById("contador").innerHTML="FIN DEL TIEMPO";
+clearInterval(contador_interval);
 }
 else{
-document
+document.getElementById("contador").innerHTML=contador;
 }
-document.getElementById("contador").innerHTML = contador;
-}
-let contador_interval=setInterval(cuenta, 1000);
 
+}
+let contador_interval;
+function start_contador()
+{
+contador_interval=setInterval(cuenta, 1000);
+}
 
 function cambia()
     {
@@ -52,11 +56,34 @@ function check_number(){
 		document.getElementById("resultado").innerHTML="<strong>Has ganado</strong>";
 	}
 }
-		
+fetch("buscapaco.json").then(function(response){
+	return response.json();
+}).then(function(data){
+	console.log(data);
+	
+});
+function carga_datos(id_character){
+	fetch("ch"+id_character+".json").then(function(response){
+		return response.json();
+	}).then(function(data){
+	
+	let lista="<ul>";
+	lista+="<li>Nombre: "+data.name+"</li>";
+  lista+="<li>Age: "+data.age+"</li>";
+	lista+="<li>Race: "+data.race+"</li>";
+	lista+="<li>Class: "+data.class+"</li>";
+	lista+="</ul>";
+	console.log(lista);
+	document.getElementById("character_data").innerHTML=lista;
+	});
+
+}
+	
+
 	</script>	
 
 </head>
-<body>
+<body id="game-page">
 	<header>
 		<h1>Inogue Proyectos <abbr title="Escola de Noves Tecnologies Interactives">ENTI</abbr></h1>
 		<p>Estudiante de ciberseguridad</p>
@@ -78,7 +105,18 @@ function check_number(){
 			<p><input type="button" value="Adivina" onClick="check_number();"/></p> 
 			
 			<p><input type="button" value="patata" id="cambiacol" onClick="cambia();" /></p>
-		<p id="contador">0</p>
+		<p id="contador">10</p>
+		<p><input type="button" id="inicia_contador" onClick="start_contador();" value="Inicia el contador" /></p>
+		<form id="characters">
+
+		<ul id="character_list">
+			<li><button type="button" id="ch1" onClick="carga_datos(1);">Eustaquio</button></li>
+			<li><button type="button" id="ch2" onClick="carga_datos(2);">Mariana</button></li>
+			<li><button type="button" id="ch3" onClick="carga_datos(3);">Mortadelo</button></li>
+			<li><button type="button" id="ch4" onClick="carga_datos(4);">Messi</button></li>
+		</ul>
+		
+		<section id="character_data" > </section>
 		</form>
 		</main>
 	<footer>

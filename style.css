@@ -40,3 +40,33 @@ background-color:#959594;
 border-bottom:2px solid #00cc00;
 }
 
+#game-page header{
+background-color:red;
+}
+
+#character_list{
+display: flex;
+flex-direction:row;
+padding:0px;
+margin:0px;
+list-style-type:none; 
+}
+#character_list button{
+padding:8px;
+border-radius:16px;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border:0;
+background-color:#ccc;
+}
+#character_list button:hover{
+background-color:#aaa;
+}
+#character_data{
+background-color:#ccc;
+min-height:72px;
+}
+#character_data ul{
+margin:0;
+}
+

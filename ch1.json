@@ -1,0 +1,13 @@
+{
+"id_character": 1,
+"name": "Eustaquio",
+"race": "Enano",
+"age":197,
+"class":"Artificiero",
+"gender":"NB",
+"height":1.3,
+"weight":80,
+"language":"PRT",
+"origin":"Brazil"
+}
+
