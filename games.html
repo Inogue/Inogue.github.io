@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type"image/x-icon" href="favicon.icon">
+	<title>Inogue proyectos</title> 
+	<link rel="stylesheet" href="style.css" />
+	<script>
+
+
+		let numero=Math.floor(Math.random() * 100);
+function check_number(){
+	console.log(numero);
+	let jugador = document.getElementById("numero_jugador").value;
+	console.log(jugador);
+	let valor = parseInt(jugador);
+	if (isNaN(valor)){
+	document.getElementById("resultado").innerHTML = "<strong class=\"error\">ERROR</strong>";
+	return;
+	}
+	if ( valor > numero ){
+	document.getElementById("resultado").innerHTML = "<em>El numero "+valor+" es <strong>mayor</strong> que el numero a adivinar</em>";
+	}
+	else if ( valor < numero ){
+		document.getElementById("resultado").innerHTML = "<em>El numero "+valor+" es <strong>menor</strong> que el numero a adivinar</em>";
+	}				
+	else{
+		document.getElementById("resultado").innerHTML="<strong>¡HAS GANADO!</strong>";
+	}
+}
+
+	</script>	
+
+</head>
+<body id="game-page">
+	<nav>
+		<ul>
+			<li><a href="index.html">Portada</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="games.html">Juego</a></li>
+			<li><a href="hobbie.html">Hobbies</a></li>
+			<li><a href="contact.html">Contacto</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+	 <h2 id="titulo_juego">Adivina el numero entre el 1 y el 100</h2>
+		<form>
+			<p id="resultado">Introduce un numero</p>
+			<p><input type="text" id="numero_jugador"/></p>
+			<p><input type="button" value="Adivina" onClick="check_number();" id="rd-button"/></p> 
+			
+	
+		</main>
+	<footer>
+		<p>Inogue (c) 2023</p>
+	</footer>
+</body>
+
+</html>
