@@ -5,7 +5,46 @@
 	<title>Inogue proyectos</title> 
 <link rel="icon" type"image/x-icon" href="logo.png">
 <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.cdnfonts.com/css/copperplate" rel="stylesheet">
 </head>
+ <script>
+ document.getElementById("formulario").addEventListener("submit", function(event) {
+        event.preventDefault();
+        check();
+    });
+    
+    function check() {
+    
+        let nombre = document.getElementById("nombre").value;
+        let email = document.getElementById("correo").value;
+        let country = document.getElementById("pais").value;
+        let comment = document.getElementById("comentario").value;
+        
+        
+        if (nombre == '') {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+        
+        if (email == '') {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+        
+        if (country == none) {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+        
+        if (comment == '') {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+        
+       
+    }
+    
+    </script>
 <body>
 	<nav>
 		<ul>
@@ -17,7 +56,7 @@
 		</ul>
 	</nav>
 	<main id="contact-main">
-	<h2>Informacion de contacto</h2>
+	<h2>INFORMACIÓN DE CONTACTO</h2>
 	<form>
  		<fieldset>
 		<p><label for="nombre">Nombre:</label><span style="color: red !important; display: inline; float: none;">*</span><input type="text" name="contact_name" id="nombre" required /></p>
@@ -272,7 +311,7 @@
             </select>
  		</p>
 		<p><label for="comentario">Comentario:</label><span style="color: red !important; display: inline; float: none;">*</span><input type="text" name="contact_comment" id="comment" required /></p>
-		<p><input id="sumbit_info" type="submit" value="Enviar" /></p>
+		<p><input id="sumbit_info" type="submit" value="Enviar" onclick="check()" /></p>
 	</fieldset>
 	</form>
 	</main>
