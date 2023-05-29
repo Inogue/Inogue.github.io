@@ -52,8 +52,8 @@
 ### **_HISTORIA XML_**
 
 
-Lenguaje base de lenguajes de marcas. Viene de un lenguaje de los años 70 que se llama SGML. Utilizaba etiquetas como la  <i> <b> y demás. Word es un texto binario con texto enriquecido.
-Los lenguajes de marcas tienen como objetivo remarcar palabras. En los años 70 no había gráfica, por lo que se usaba este lenguaje de marcas para printar este tipo de texto. Lo que hacía era colocar estas etiquetas <B> etc para que la impresora parseara estas etiquetas e imprimiera las palabras como se quería.  
+Lenguaje base de lenguajes de marcas. Viene de un lenguaje de los años 70 que se llama SGML. Utilizaba etiquetas como la  ```<i>``` ```<b>``` y demás. Word es un texto binario con texto enriquecido.
+Los lenguajes de marcas tienen como objetivo remarcar palabras. En los años 70 no había gráfica, por lo que se usaba este lenguaje de marcas para printar este tipo de texto. Lo que hacía era colocar estas etiquetas ```<B>``` etc para que la impresora parseara estas etiquetas e imprimiera las palabras como se quería.  
 En los 80 con las gráficas era posible usar interfaces gráficas. HTTP  (Hyper Text Transfer Protocol) este protocolo conseguía transformar el texto en tres dimensiones en vez de dos. La tercera dimensión son los enlaces, gracias a esto existe la capacidad de poner enlaces en las palabras.
 En los 90 SGML se transformó en HTML. Gracias a esto se consiguió enlazar páginas web que estén en servidores HTTP. El primer browser se llamó Mosaic creado por el mismo que creó HTML. Apareció una empresa llamada NetScape que creó un navegador gratuito que interpretaba lenguaje HTML. IRC es un protocolo de chat que usa twitch. Microsoft compró internet explorer.
 La expresión de navegar viene de netScape y Microsoft intentó implementar el término surfear. Microsoft intentó imponer Internet Explorer haciendo que sea del propio núcleo y haciendo que el explorador de archivos se vea como una web de internet explorer. Internet Explorer aplicaba mal el lenguaje HTML y como era el navegador predominante todo el mundo programaba páginas webs de la forma que lo interpretaba Internet Explorer.
