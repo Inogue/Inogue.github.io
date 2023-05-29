@@ -13,14 +13,19 @@ p{
 }
 body{
 position: relative;
-padding-bottom: 5em;
+padding-bottom: 6em;
 min-height: 100vh;
 }
 footer{
 bottom: 0;
 position: absolute;
 width: 100%;
+padding:0px;
 height: 3 rem;
+}
+footer p{
+padding: 0px;
+margin: 0px;
 }
 nav {
 background-color:transparent;
