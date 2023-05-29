@@ -50,6 +50,8 @@
   ```
 
 ### **_HISTORIA XML_**
+
+
 Lenguaje base de lenguajes de marcas. Viene de un lenguaje de los años 70 que se llama SGML. Utilizaba etiquetas como la  <i> <b> y demás. Word es un texto binario con texto enriquecido.
 Los lenguajes de marcas tienen como objetivo remarcar palabras. En los años 70 no había gráfica, por lo que se usaba este lenguaje de marcas para printar este tipo de texto. Lo que hacía era colocar estas etiquetas <B> etc para que la impresora parseara estas etiquetas e imprimiera las palabras como se quería.  
 En los 80 con las gráficas era posible usar interfaces gráficas. HTTP  (Hyper Text Transfer Protocol) este protocolo conseguía transformar el texto en tres dimensiones en vez de dos. La tercera dimensión son los enlaces, gracias a esto existe la capacidad de poner enlaces en las palabras.
