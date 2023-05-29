@@ -11,6 +11,11 @@ color: white;
 p{
  text-align: center;
 }
+body{
+position: relative;
+padding-bottom: 5em;
+min-height: 100vh;
+}
 footer{
 bottom: 0;
 position: absolute;
@@ -245,11 +250,7 @@ box-shadow: 2px 4px 8px rgba(0, 0, 0, 1);
 #hobbies_main summary:hover{
 background-color:#BBFFFA;
 }
-#hobbies_body{
-position: relative;
-padding-bottom: 5em;
-min-height: 100vh;
-}
+
 summary {
 font-size: 1rem;
 font-weight: 600;
