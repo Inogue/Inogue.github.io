@@ -1,6 +1,12 @@
-html,body{
+html{
 margin:0;
 padding:0;
+height: 500px;
+background-image: url("cyberpunk.png");
+background-size: cover;
+background-repeat:no-repeat;
+background-position: center center;
+background-attachment: fixed;
 }	
 p{
  text-align: center;
@@ -63,7 +69,7 @@ display:flex
 flex-direction:column;
 font-size:40px;
 text-align:center;
-margin:20 0 0 0;
+margin:10 0 0 0;
 }
 #pbody h2{
 margin:0;
@@ -71,15 +77,27 @@ font-size:30px;
 text-align:center
 }
 #pbody p{
-    font-size:20px;
-    font-family: monospace;
+font-size:20px;
+font-family: monospace;
 }
-#contact-main{
+
+#contact-main {
 padding:32px;	
 }
 #contact-main h2{
 text-shadow:2px 2px 10px red;
 font-family:sans-sherif;
+display:block;
+text-align: center;
+align-items: center;
+}
+
+#contact-main form{
+display: flex;
+flex-direction:column;
+text-align:center;
+align-items: center;
+padding:32px;	
 }
 #contact-main form p{
 display:flex;
@@ -89,6 +107,18 @@ text-align:center;
 }
 #contact-main form label{
 width:132px;
+}
+#contact-main fieldset{
+background-color:white;	
+}
+#sumbit_info{
+background:black;
+color:white;
+margin:10px;
+padding: 10px;
+border:none;
+border-radius:16px;
+font-size:20px;
 }
 #titulo_juego{
 border-bottom:5px solid #63231A;
@@ -115,17 +145,7 @@ font-size:20px;
 padding:10px;
 font-size:10px;
 }
-#adivinanzaContainer {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 #adivinanza {
     font-size: 24px;
     margin-bottom: 20px;
@@ -134,7 +154,7 @@ font-size:10px;
   font-size:40px;
 }
 #enviarRespuesta, #cambiarAdivinanza {
-   background:black;
+background:black;
 color:white;
 margin:10px;
 padding: 10px;
@@ -150,6 +170,7 @@ font-size:20px;
     font-weight: bold;
     margin-top: 10px;
 }
+
 
 summary {
 

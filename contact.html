@@ -19,7 +19,8 @@
 	<main id="contact-main">
 	<h2>Informacion de contacto</h2>
 	<form>
- 		<p><label for="nombre">Nombre:</label><span style="color: red !important; display: inline; float: none;">*</span><input type="text" name="contact_name" id="nombre" required /></p>
+ 		<fieldset>
+		<p><label for="nombre">Nombre:</label><span style="color: red !important; display: inline; float: none;">*</span><input type="text" name="contact_name" id="nombre" required /></p>
  		<p><label for="correo">Correo Electronico:</label><span style="color: red !important; display: inline; float: none;">*</span>  <input type="email" name="contact_mail" id="correo" required /></p>
 		<p><label for="pais">Pais</label><span style="color: red !important; display: inline; float: none;">*</span>      
         
@@ -271,7 +272,9 @@
             </select>
  		</p>
 		<p><label for="comentario">Comentario:</label><span style="color: red !important; display: inline; float: none;">*</span><input type="text" name="contact_comment" id="comment" required /></p>
-		<p><input type="submit" value="enviar" /></p>
+		<p><input id="sumbit_info" type="submit" value="Enviar" /></p>
+	</fieldset>
+	</form>
 	</main>
 	<footer>
 		<p id="1"><a href="https://www.linkedin.com/in/ian-nogueira-manzano-742485254/"><img src="linkedin.png" alt="linkedin"/></a><a href="https://github.com/Inogue"><img src="github.png" alt="github"/></a></p>
