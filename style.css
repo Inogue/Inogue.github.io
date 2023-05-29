@@ -185,8 +185,72 @@ font-size:20px;
     margin-top: 10px;
 }
 
-summary {
+#cv_main {
+padding:32px
+}
+#cv_main p{
+display:flex;
+padding: 0px;
+margin: 0px;	
 
+}
+#cv_main form{
+display: flex;
+flex-direction:column;
+align-items: center;
+padding:32px;	
+}
+#cv_main fieldset{
+display: flex;
+flex-direction:column;
+border-radius:16px;
+border-color: black;
+border-width: 10px;
+}
+
+#cv_main h1, #hobbies_main h1{
+text-align:center;
+font-size:40px;
+font-family: 'Copperplate', sans-serif;
+margin:5 0 0 0;
+padding: 0px;
+}
+#cv_main h2, #hobbies_main h2{
+font-size:30px;
+font-family: Times New Roman;
+font-weight: bold;
+}
+#cv_main h3{
+font-size:25px;
+font-family: Times New Roman;
+font-weight: bold;
+}
+#hobbies_main p{
+	display: block;
+	padding: 5px;
+}
+#hobbies_main img{
+height: 400px;
+display:flex;
+}
+#hobbies_main summary{
+display: flex;
+font-weight: bold;
+background-color: transparent;
+font-size:30px;
+font-family: Times New Roman;
+color:gray;
+box-shadow: 2px 4px 8px rgba(0, 0, 0, 1);
+}
+#hobbies_main summary:hover{
+background-color:#BBFFFA;
+}
+#hobbies_body{
+position: relative;
+padding-bottom: 5em;
+min-height: 100vh;
+}
+summary {
 font-size: 1rem;
 font-weight: 600;
 background-color: transparent;
