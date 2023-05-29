@@ -2,9 +2,11 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type"image/x-icon" href="favicon.icon">
 	<title>Inogue proyectos</title> 
 	<link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
 
 
@@ -29,6 +31,42 @@ function check_number(){
 	}
 }
 
+	let adivinanzas = [];
+	let adivinanzaActual;
+
+	  fetch('adivinanza.json')
+		.then(response => response.json())
+		.then(data => {
+		  adivinanzas = data;
+		  mostrarAdivinanza();
+		});
+
+	  function mostrarAdivinanza() {
+		adivinanzaActual = adivinanzas[Math.floor(Math.random() * adivinanzas.length)];
+		document.getElementById('adivinanza').innerText = adivinanzaActual.adivinanza;
+	  }
+
+	  function esRespuestaCorrecta() {
+		let respuestaUsuario = document.getElementById('respuesta').value.toLowerCase();
+			
+			if (verificarespuesta(respuestaUsuario, adivinanzaActual.respuesta.toLowerCase())) {
+				document.getElementById('respuestafinal').innerHTML = "Correcto!";
+				
+			} else {
+				document.getElementById('respuestafinal').innerHTML = "Incorrecto. Prueba otra vez";
+			}
+	  }
+
+	 function cambiadivinanza() {
+			mostrarAdivinanza();
+			document.getElementById('respuesta').value = ''; 
+			document.getElementById('respuestafinal').innerHTML = ''; 
+		}
+
+		function verificarespuesta(respuestaUsuario, respuestaCorrecta) {
+			return respuestaUsuario == respuestaCorrecta;
+		}
+
 	</script>	
 
 </head>
@@ -47,10 +85,16 @@ function check_number(){
 	 <h2 id="titulo_juego">Adivina el numero entre el 1 y el 100</h2>
 		<form>
 			<p id="resultado">Introduce un numero</p>
-			<p><input type="text" id="numero_jugador"/></p>
+			<p><input type="text" id="numero_jugador" placeholder="Escribe tu respuesta aquí"/></p>
 			<p><input type="button" value="Adivina" onClick="check_number();" id="rd-button"/></p> 
-			
-	
+		</form>	
+	<h2 id="titulo_juego">Adivinanzas</h2>
+		<form>	
+			<p id="adivinanza"><p/>
+			<input type="text" id="respuesta" placeholder="Escribe tu respuesta aquí">
+			<p><input type="button" id="enviarRespuesta" value="Adivinar" onClick="esRespuestaCorrecta()"/><input type="button" id="cambiarAdivinanza" value="Cambiar adivinanza" onClick="cambiadivinanza()"/></p>
+			<p id="respuestafinal"></p>
+		</form>
 		</main>
 	<footer>
 		<p>Inogue (c) 2023</p>
